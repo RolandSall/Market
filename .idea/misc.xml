@@ -8,7 +8,7 @@
         <option value="$PROJECT_DIR$/identity/pom.xml" />
         <option value="$PROJECT_DIR$/items-info/pom.xml" />
         <option value="$PROJECT_DIR$/item-rating/pom.xml" />
-        <option value="$PROJECT_DIR$/registry-service/pom.xml" />
+        <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
       </list>
     </option>
   </component>

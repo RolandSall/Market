@@ -1,79 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="27f3e260-1b9a-4b97-bd4d-9299bf2137f0" name="Default Changelist" comment="feat: adding a dummy webclient async call">
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/model/UserItemRating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/item-rating/src/main/java/com/market/itemrating/models/UserItemRating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/resources/BasketResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/resources/BasketResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-rating/src/main/java/com/market/itemrating/resources/ItemRatingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-rating/src/main/java/com/market/itemrating/resources/ItemRatingResource.java" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1mNoCqowwiIBcel1Xk2YfcOIaFn" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="shared-indexes" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.market.basket.model" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.ItemRatingApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="BasketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="basket" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.market.basket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.market.basket.BasketApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,6 +22,13 @@
     <configuration name="CatalogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="catalog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.market.catalog.CatalogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.market.discoveryserver.DiscoveryServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,90 +43,16 @@
     <configuration name="ItemRatingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="item-rating" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.market.itemrating.ItemRatingApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemsInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="items-info" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.market.itemsinfo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="ItemsInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="item-info" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.market.itemsinfo.ItemsInfoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="registry-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.market.registryservice.RegistryServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.ItemRatingApplication" />
-      <item itemvalue="Spring Boot.BasketApplication" />
-      <item itemvalue="Spring Boot.ItemsInfoApplication" />
-      <item itemvalue="Spring Boot.RegistryServiceApplication" />
-      <item itemvalue="Spring Boot.IdentityApplication" />
-      <item itemvalue="Spring Boot.CatalogApplication" />
-    </list>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="27f3e260-1b9a-4b97-bd4d-9299bf2137f0" name="Default Changelist" comment="" />
-      <created>1609343285703</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1609343285703</updated>
-      <workItem from="1609343288101" duration="1392000" />
-      <workItem from="1609344705940" duration="4765000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat: added new service">
-      <created>1609343495517</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1609343495517</updated>
-    </task>
-    <task id="LOCAL-00002" summary="feat: adding a dummy webclient async call">
-      <created>1609352090297</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1609352090297</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: added new service" />
-    <MESSAGE value="feat: adding a dummy webclient async call" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding a dummy webclient async call" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
