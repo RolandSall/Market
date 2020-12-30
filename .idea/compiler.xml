@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="basket" />
+        <module name="item-rating" />
+        <module name="catalog" />
+        <module name="registry-service" />
+        <module name="identity" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="basket" target="11" />
+      <module name="catalog" target="11" />
+      <module name="identity" target="11" />
+      <module name="item-rating" target="11" />
+      <module name="registry-service" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="basket" options="-parameters" />
+      <module name="catalog" options="-parameters" />
+      <module name="identity" options="-parameters" />
+      <module name="item-rating" options="-parameters" />
+      <module name="registry-service" options="-parameters" />
+    </option>
+  </component>
+</project>

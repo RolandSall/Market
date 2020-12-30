@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Market-App.iml" filepath="$PROJECT_DIR$/.idea/Market-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basket/basket.iml" filepath="$PROJECT_DIR$/basket/basket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/catalog/catalog.iml" filepath="$PROJECT_DIR$/catalog/catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/identity/identity.iml" filepath="$PROJECT_DIR$/identity/identity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/item-rating/item-rating.iml" filepath="$PROJECT_DIR$/item-rating/item-rating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/registry-service/registry-service.iml" filepath="$PROJECT_DIR$/registry-service/registry-service.iml" />
+    </modules>
+  </component>
+</project>
