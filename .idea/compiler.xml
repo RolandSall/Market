@@ -2,12 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="basket" />
+        <module name="items-info" />
         <module name="item-rating" />
         <module name="catalog" />
         <module name="registry-service" />
@@ -19,6 +19,7 @@
       <module name="catalog" target="11" />
       <module name="identity" target="11" />
       <module name="item-rating" target="11" />
+      <module name="items-info" target="11" />
       <module name="registry-service" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -28,6 +29,7 @@
       <module name="catalog" options="-parameters" />
       <module name="identity" options="-parameters" />
       <module name="item-rating" options="-parameters" />
+      <module name="items-info" options="-parameters" />
       <module name="registry-service" options="-parameters" />
     </option>
   </component>

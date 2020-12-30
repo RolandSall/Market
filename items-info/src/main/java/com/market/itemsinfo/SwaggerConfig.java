@@ -1,4 +1,4 @@
-package com.market.catalog;
+package com.market.itemsinfo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

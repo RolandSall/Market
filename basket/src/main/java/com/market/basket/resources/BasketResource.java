@@ -14,7 +14,7 @@ import java.util.List;
 public class BasketResource {
 
     @GetMapping("/{userId}")
-    public List<BasketItem> getBasketItem(@PathVariable("userId") String userId){
+    public List<BasketItem> getBasketItem(@PathVariable("userId") String userId) {
         BasketItem basketItem = new BasketItem().builder().name("Fork").description("Description").rating(2).build();
         return Collections.singletonList(basketItem);
     }
