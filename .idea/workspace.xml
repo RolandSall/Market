@@ -4,39 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27f3e260-1b9a-4b97-bd4d-9299bf2137f0" name="Default Changelist" comment="feat: added new service">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_55_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_core_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_http_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/model/ItemRating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/item-rating/src/main/java/com/market/itemrating/models/ItemRating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/item-rating/src/main/java/com/market/itemrating/resources/ItemRatingResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/items-info/src/main/java/com/market/itemsinfo/models/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/items-info/src/main/java/com/market/itemsinfo/resources/ItemResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="27f3e260-1b9a-4b97-bd4d-9299bf2137f0" name="Default Changelist" comment="feat: adding a dummy webclient async call">
+      <change afterPath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/model/UserItemRating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/item-rating/src/main/java/com/market/itemrating/models/UserItemRating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/BasketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/BasketApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/resources/BasketResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/basket/src/main/java/com/market/basket/resources/BasketResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-rating/src/main/java/com/market/itemrating/resources/ItemRatingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-rating/src/main/java/com/market/itemrating/resources/ItemRatingResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +42,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="shared-indexes" />
   </component>
   <component name="RecentsManager">
@@ -76,7 +52,7 @@
       <recent name="com.market.basket.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BasketApplication">
+  <component name="RunManager" selected="Spring Boot.ItemRatingApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -163,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609343285703</updated>
       <workItem from="1609343288101" duration="1392000" />
-      <workItem from="1609344705940" duration="3727000" />
+      <workItem from="1609344705940" duration="4765000" />
     </task>
     <task id="LOCAL-00001" summary="feat: added new service">
       <created>1609343495517</created>
@@ -172,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609343495517</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: adding a dummy webclient async call">
+      <created>1609352090297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609352090297</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: added new service" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added new service" />
+    <MESSAGE value="feat: adding a dummy webclient async call" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adding a dummy webclient async call" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

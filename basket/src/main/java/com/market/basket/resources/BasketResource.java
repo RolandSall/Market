@@ -3,6 +3,7 @@ package com.market.basket.resources;
 import com.market.basket.model.BasketItem;
 import com.market.basket.model.Item;
 import com.market.basket.model.ItemRating;
+import com.market.basket.model.UserItemRating;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,12 +30,14 @@ public class BasketResource {
     public List<BasketItem> getBasketItem(@PathVariable("userId") String userId) {
 
 
-        List<ItemRating> ratings = Arrays.asList(
-                new ItemRating().builder().itemId("12").rating(5).build(),
-                new ItemRating().builder().itemId("1234").rating(2).build()
-        );
+        UserItemRating ratingsList = webClientBuilder.build()
+                .get()
+                .uri("http://localhost:8082/ratingsItems/users/" +userId)
+                .retrieve()
+                .bodyToMono(UserItemRating.class)
+                .block();
 
-        return ratings.stream().map(itemRating -> {
+        return ratingsList.getUserItemRating().stream().map(itemRating -> {
                     Item item = webClientBuilder.build()
                             .get()
                             .uri("http://localhost:8083/items/" + itemRating.getItemId())
