@@ -32,7 +32,7 @@ public class BasketResource {
 
         UserItemRating ratingsList = webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8082/ratingsItems/users/" +userId)
+                .uri("http://item-rating-service/ratingsItems/users/" +userId)
                 .retrieve()
                 .bodyToMono(UserItemRating.class)
                 .block();
@@ -40,7 +40,7 @@ public class BasketResource {
         return ratingsList.getUserItemRating().stream().map(itemRating -> {
                     Item item = webClientBuilder.build()
                             .get()
-                            .uri("http://localhost:8083/items/" + itemRating.getItemId())
+                            .uri("http://items-info-service/items/" + itemRating.getItemId())
                             .retrieve()
                             .bodyToMono(Item.class)
                             .block();
