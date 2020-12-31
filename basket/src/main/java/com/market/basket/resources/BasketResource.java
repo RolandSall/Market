@@ -4,6 +4,7 @@ import com.market.basket.model.BasketItem;
 import com.market.basket.model.Item;
 import com.market.basket.model.ItemRating;
 import com.market.basket.model.UserItemRating;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,6 +28,7 @@ public class BasketResource {
     }
 
     @GetMapping("/{userId}")
+    @HystrixCommand(fallbackMethod = "getFallbackBasket")
     public List<BasketItem> getBasketItem(@PathVariable("userId") String userId) {
 
 
@@ -47,5 +49,10 @@ public class BasketResource {
                     return new BasketItem(item.getName(), "Desc", itemRating.getRating());
                 }
         ).collect(Collectors.toList());
+    }
+
+
+    public List<BasketItem> getFallbackBasket(@PathVariable("userId") String userId){
+        return Arrays.asList(new BasketItem().builder().description("desc").name("fallback").rating(0).build());
     }
 }
