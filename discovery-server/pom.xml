@@ -64,6 +64,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>discovery-service</finalName>
     </build>
 
     <repositories>

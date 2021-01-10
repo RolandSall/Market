@@ -91,6 +91,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>identity-info-service</finalName>
     </build>
 
 </project>

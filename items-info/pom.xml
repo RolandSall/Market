@@ -89,6 +89,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>items-info-service</finalName>
     </build>
 
 </project>

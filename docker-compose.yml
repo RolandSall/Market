@@ -1,0 +1,58 @@
+version: '3.1'
+services:
+  discovery-service:
+    container_name: discovery-service
+    image: rolandsall24/discovery-service:1.0.0-env-local
+    build: ./discovery-server/
+    ports:
+      - "8761:8761"
+
+  items-info-service:
+    container_name: items-info-service
+    image: rolandsall24/items-info-service:1.0.0-env-local
+    build: ./items-info/
+    ports:
+      - "8083:8083"
+
+    depends_on:
+      - discovery-service
+
+  item-rating-service:
+    container_name: item-rating-service
+    image: rolandsall24/item-rating-service:1.0.0-env-local
+    build: ./item-rating
+    ports:
+      - "8082:8082"
+
+    depends_on:
+      - discovery-service
+
+  identity-info-service:
+    container_name: identity-info-service
+    image: rolandsall24/identity-info-service:1.0.0-env-local
+    build: ./identity
+    ports:
+      - "8079:8079"
+
+    depends_on:
+      - discovery-service
+
+  catalog-info-service:
+    container_name: catalog-info-service
+    image: rolandsall24/catalog-info-service:1.0.0-env-local
+    build: ./catalog
+    ports:
+      - "8081:8081"
+
+    depends_on:
+      - discovery-service
+
+  basket-service:
+    container_name: basket-service
+    image: rolandsall24/basket-service:1.0.0-env-local
+    build: ./basket
+    ports:
+      - "8080:8080"
+
+    depends_on:
+      - discovery-service
